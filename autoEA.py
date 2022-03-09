@@ -2,22 +2,22 @@ import pandas as pd
 import numpy as np
 
 class autoEA:
-    def __init__(self, biotop, planung, tempCols, lastingCols, lastingName, tempName ):
+    def __init__(self, biotop, planung, tempVals, lastingVals, lastingName, tempName ):
         self.planung = QgsProject.instance().mapLayersByName(planung)[0]
         self.biotop = QgsProject.instance().mapLayersByName(biotop)[0]
         self.clipLayer = None
-        self.lastingCols = lastingCols
-        self.tempCols = tempCols
+        self.lastingVals = lastingVals
+        self.tempVals = tempVals
         self.lastingName = lastingName
         self.tempName = tempName
         self.LUTpath = "C:\\Users\\T\\Documents\\GitHub\\auto_EA_Bilanz\\LUT_shk.csv"
         
         self.clip()
         self.addArea(self.clipLayer)
-        self.groupKV_typ(self.clipLayer, self.lastingCols, self.lastingName, 'Ausgleich_dauerhaft')
-        self.groupKV_typ(self.clipLayer, self.tempCols, self.tempName, 'Eingriff_temporär')
-        self.groupKV_typ(self.clipLayer, self.lastingCols, self.tempName, 'Eingriff_dauerhaft')
-        self.groupKV_typ(self.clipLayer, self.tempCols, self.lastingName, 'Ausgleich_temporär')
+        self.groupKV_typ(self.clipLayer, self.lastingVals, self.lastingName, 'Ausgleich_dauerhaft')
+        self.groupKV_typ(self.clipLayer, self.tempVals, self.tempName, 'Eingriff_temporär')
+        self.groupKV_typ(self.clipLayer, self.lastingVals, self.tempName, 'Eingriff_dauerhaft')
+        self.groupKV_typ(self.clipLayer, self.tempVals, self.lastingName, 'Ausgleich_temporär')
         
     def clip(self):
         
@@ -93,10 +93,10 @@ class autoEA:
 tempName = 'KV_Typ'
 lastingName = 'MASSN_KV'
 
-tempCols = ['B_Gruenflaeche', 'B_Gruenflaeche_Boeschung', 'B_Wald', 'B_Wald_Entsiegelung', 'B_Wald_Ersatzaufforstung']
-lastingCols = ['A_Bach', 'A_Befestigung', 'A_Befestigung_Boeschung', 'A_Graben', 'A_Gruenflaeche_Boeschung', 'A_Versiegelung',]
+tempVals = ['B_Gruenflaeche', 'B_Gruenflaeche_Boeschung', 'B_Wald', 'B_Wald_Entsiegelung', 'B_Wald_Ersatzaufforstung']
+lastingVals = ['A_Bach', 'A_Befestigung', 'A_Befestigung_Boeschung', 'A_Graben', 'A_Gruenflaeche_Boeschung', 'A_Versiegelung',]
 
 Biotop = 'Cleaned'
 Planung = 'L19_07_Planung'
 
-autoEA(biotop=Biotop, planung=Planung, tempCols=tempCols, tempName=tempName, lastingCols=lastingCols, lastingName=lastingName)
+autoEA(biotop=Biotop, planung=Planung, tempVals=tempVals, tempName=tempName, lastingVals=lastingVals, lastingName=lastingName)
