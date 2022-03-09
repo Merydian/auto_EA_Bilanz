@@ -1,0 +1,306 @@
+﻿Typ;Restr.;Übersch.;Standard-Nutzungs-/Biotoptyp;LRT;§30  ;HB-Code;WP
+01.100;;;Laubwald   > 70 % Anteil von Laubbäumen;;;;
+01.110;;;Buchenwald (naturnah) Bis zu einem Fremdbaumanteil von max. 10% und Baumalter mind. 120 Jahre;;;;
+01.111;B;;Bodensaurer Buchenwald;9110;;1.120;58
+01.112;B;;Mesophiler Buchenwald;9130;;1.110;64
+01.113;B;;Buchenwald trockenwarmer Standorte;9150;ja;1.130;68
+01.114;;;Buchenwald (forstlich überformt) Bei einem Fremdbaumanteil zw. 11% und 30% o. Alter < 120;;;;
+01.115;B;;Bodensaurer Buchenwald, forstlich überformt;9110;;;41
+01.116;B;;Mesophiler Buchenwald, forstlich überformt;9130;;;45
+01.117;B;;Buchenwald trockenwarmer Standorte, forstlich überformt;9150;ja;;49
+01.118;;;Buchenaufforstungen vor Kronenschluss;;;;33
+01.120;;;Eichen- und Eichenmischwald (naturnah) Bis zu einem Fremdbaumanteil von max. 10% und Baumalter mind. 120 Jahre;;;;
+01.121;B;;Labkraut-Eichen-Hainbuchenwald;9170;tw.;;68
+01.122;B;;Sternmieren-Eichen-Hainbuchenwald;9160;tw.;;68
+01.123;B;;Thermophiler Eichenwald;;ja;;68
+01.124;B;;Bodensaurer Eichenwald auf Sandebenen;9190;tw.;;68
+01.130;;;Eichenwald (forstlich überformt) Bei einem Fremdbaumanteil zw. 11% und 30%, o. Alter < 120 J;;;;
+01.131;B;;Labkraut-Eichen-Hainbuchenwald, forstlich überformt;9170;tw.;;49
+01.132;B;;Sternmieren-Eichen-Hainbuchenwald, forstlich überformt;9160;tw.;;49
+01.133;B;;Thermophiler Eichenwald, forstlich überformt;;ja;;49
+01.134;B;;Bodensaurer Eichenwald auf Sandebenen, forstlich überformt;9190;tw.;;49
+01.135;B;;Sonstiger Eichenwald;;;;46
+01.136;;;Eichenaufforstung vor Kronenschluss;;;;33
+01.140;;;Wassergeprägter Laubwald (naturnah);;;;
+01.141;B;;Hartholzauwald Bis zu einem Fremdbaumanteil von max. 10% und Baumalter mind. 120 Jahre;91F0;ja;1.172;72
+01.142;B;;Weiden-Weichholzaue;91E0*;ja;1.171;66
+01.143;B;;"Bachauwald Flächige Bestände; einreihige Ufergehölzbestände fallen unter 02.320";91E0*;ja;;66
+01.144;B;;Schwarzerlenbrüche;;ja;;69
+01.145;B;;Birkenbrüche;;ja;;
+01.146;B;;Birken-Moorwald;91D0*;ja;;72
+01.147;;;Hartholzauwald (forstlich überformt) Fremdbaumanteil >10% oder Alter <120 Jahren;;;;
+01.148;(B);;Hartholzauwald (forstlich überformt)  ;91F0;ja;;66
+01.149;;;Neuanlage von Auwald/ Bruchwald/ Ufergehölzen;;;;36
+01.150;;;Edellaubholzwälder (naturnah);;;;
+01.151;B;;Edellaubholzreiche Schlucht-, Schatthang und Blockschuttwälder;9180*;ja;;68
+01.152;B;;Edellaubbaumwälder trockenwarmer Standorte;9180*;ja;1.161;68
+01.153;;;Edellaubbaumwälder (forstlich überformt) Bei einem Fremdbaumanteil zwischen 11% und 30%, o. Alter < 120,  LRT-Zugehörigkeit ist als Zusatzmerkmal anzugeben;;;;
+01.154;(B);;Edellaubholzreiche Schlucht-, Schatthang- und Blockschuttwälder, forstlich überformt;9180*;ja;;49
+01.155;(B);;Edellaubbaumwälder trockenwarmer Standorte, forstlich überformt;9180*;ja;;49
+01.156;;;Sonstige Edellaubbaumwälder;;;;44
+01.157;;;Neuanlage edellaubholzreicher Schlucht-, Schattenhang- und Blockschuttwälder;;;;36
+01.160;;;Pionierwald;;;;
+01.161;(B);;Pionierwälder;;;;42
+01.162;;;Schlagfluren, -Sukzession im und am Wald vor Kronenschluss;;;;36
+01.163;B;;Typischer voll entwickelter Waldrand, Schwerpunkt Laubholz, gestuft inkl. Krautsaum ab 25m Breite, darunter dem Waldbestand zuzurechnen;;;1.500;59
+01.180;;;Sonstige stark forstlich geprägte Laubwälder;;;1183;
+01.181;;;Naturferne Laubholzforste nach Kronenschluss;;;1.181;33
+01.190;;;Wälder aus traditionellen Nutzungsformen;;;;
+01.191;B;;Mittelwald sofern nicht 01.121, 01.122, 01.131 oder 01.132;;;;63
+01.192;B;;Niederwald;;;1.183;63
+01.193;B;;Hutewald/ Waldweide, Parkwald;;;;63
+01.194;(B);;(Wieder-)herstellung historischer Waldnutzungsformen (01.191 – 01.193);;;;44
+01.200;;;Nadelwald >70% Anteil von Nadelbäumen;;;;
+01.210;;;Kiefern (naturnah) Bis zu einem Fremdbaumanteil von max. 10% und Baumalter mind. 120 Jahre;;;;
+01.211;B;;Mitteleuropäischer Flechten-Kiefernwald;91T0;ja;;69
+01.212;B;;Sarmatischer Kiefernwald;91U0;ja;;69
+01.213;B;;Sonstiger Sandkiefernwald trockenwarmer Standorte;;ja;;62
+01.214;B;;Kiefern-Moorwald;91D0*;ja ;;69
+01.215;(B);;Andere naturnahe Kiefernwälder;;tw.;;55
+01.220;;;Kiefernwälder (forstlich überformt) Bei einem Fremdbaumanteil zw.11% u. 30%, o. Alter < 120;;;;
+01.221;(B);;Mitteleuropäischer Flechten-Kiefernwald, forstlich überformt;91T0;ja;;50
+01.223;(B);;Sarmatischer Kiefernwald, forstlich überformt;91U0;ja;;50
+01.224;(B);;Sonstiger Sandkiefernwald trockenwarmer Standorte, forstlich überformt;;ja;;44
+01.225;(B);;Kiefern-Moorwald, forstlich überformt;91D0*;ja;;50
+01.290;;;Sonstige Nadelwälder;;;;
+01.297;;;Nadelholzaufforstungen vor Kronenschluss Angabe der Hauptbaumart als Zusatzmerkmal erforderlich;;;;24
+01.299;B;;Sonstige Nadelwälder Angabe der Hauptbaumarten als Zusatzmerkmal erforderlich;;;1.220;26
+01.300;;;Mischwälder --> Punktwert ist zu kalkulieren;;;;
+01.310;;;"Mischwälder aus Laubbaum- und Nadelbaumarten Bewertung entsprechend ihrer jeweiligen Mischungsanteile durch Interpolation und mit dem Grundtyp ""01.130 Mischwald"" anzugeben. Zur Interpolation können nur als ""forstlich überformt"" gekennzeichnete Grundtypen genutzt werden";;;1.300;
+02.000;;;Gebüsche, Hecken, Gehölzsäume;;;;
+02.110;(B);;Subkontinentale peripannonische Gebüsche;40A0;ja;;47
+02.120;(B);;Sonstige Gebüsche trockenwarmer Standorte;;ja;;44
+02.200;(B);;Gebüsche, Hecken, Säume heimischer Arten auf frischen Standorten;;;;39
+02.300;(B);;Sonstige Gebüsche, Hecken, Säume, heimischer Arten auf feuchten bis nassen Standorten außerhalb von Sümpfen und nicht an Fließgewässern;;;;44
+02.310;(B);;Ufer- und Sumpfgebüsche auf feuchten bis nassen Standorten;;ja;;44
+02.320;(B);;Ufergehölzsaum, standortgerecht mit Alnus glutinosa und Fraxinus excelsior (Neuanlage siehe 01.149);91E0*  ;ja;;50
+02.400;;;Neuanpflanzungen von Hecken-/Gebüschen (heimisch, standortgerecht, nur Außenbereich), Neuanlage von Feldgehölzen mit gebietseigenen Gehölzen, midestens dreireihig, mindestens 5m breit;;;;27
+02.500;;;Standortfremde Hecken-/Gebüsche (standortfremde, nicht heimische oder nicht gebietseigene Gehölze sowie Neuanlage im Innenbereich) auch Anpflanzungen, die die Mindestanforderungen von 02.400 nicht erfüllen;;;2.300;20
+02.600;;;Neue Hecken-/Gebüschpflanzung (straßenbegleitend etc., nicht auf Mittelstreifen);;;;20
+02.700;B;;durch Verbuschung degenerierte Sonderstandorte;;;;27
+02.900;;;Sonstige;;;;
+02.910;B;;Hohlwege;;tw.;;59
+03.000;;;Erwerbsgartenbau, Sonderkulturen, Streuobst;;;;
+03.100;;;Hochstämme, intensiv bewirtschaftet, soweit nicht Streuobst;;ja;;25
+03.101;;;Hochstämme, neu angelegt, soweit nicht Streuobst;;ja;;23
+03.110;;;Streuobstbestand Außerhalb der im Zusammenhang bebauten Ortsteile. Mindestgröße 1.000qm oder 10 Bäume. Sonstige Obstbaumbestände (unterhalb der Mindestgröße und im Innenbereich) zu 04.210;;;;
+03.111;B;;Streuobstbestand mäßig intensiv bewirtschaftet (3- bis mehrschürig oder Ackernutzung, Bäume jährlich geschnitten);;ja;;38
+03.121;;;Flächige Ersatz- oder Nachpflanzung hochstämmiger Obstbäume in direkter Verbindung zu Streuobstwiesen (soweit nicht 04.210);;ja;;31
+03.130;(B);;Streuobstwiese extensiv bewirtschaftet Streuobstbestand mit extensiv bewirtschafteter Mähwiese oder sonstigem FFH-LRT. Bei höherwertigem Unterwuchs gilt dessen Biotopwert. Teilbereiche mit LRT oder sonstigem höherwertigen Unterwuchs sind als Subtypen abzugrenzen (zB. 3130 / LRT 6510);6510 o.a. Gründland-LRT;ja;;50
+03.131;B;;Streuobstbestand brach, vor Verbuschung;;ja;;44
+03.132;B;;Streuobstbestand brach, nach Verbuschung sofern die Strauchschicht nicht die Höhe der Obstbaumkronen erreicht (sonst als 04.600 Feldgehölze einzustufen);;ja;;41
+03.200;;;Erwerbsgartenbau, Obstbau und Baumschulen;;;;
+03.211;;;"Erwerbsgartenbau/Sonderkulturen überwiegend Monokultur, intensive Bewirtschaftung; Zierpflanzen-, Gemüseanbau; Unterglasanbau entspricht versiegelter Fläche";;;;16
+03.212;; ;"Bio-Erwerbsgartenbau/ Sonderkulturen (überwiegend Monokultur, intensive Bewirtschaftung; Zierpflanzen-, Gemüseanbau; Unterglasanbau entspricht versiegelter Fläche)";;;;21
+03.221;;;Obstplantagen, Weinbau außerhalb Steillagen ohne Untersaat intensiv bewirtschaftete Busch-, Halbstamm- und Spalierobstkulturen, Beerenobstanbau und Tafeltrauben sowie Keltertrauben;;;;17
+03.222;;;Obstplantagen, Weinbau außerhalb Steillagen mit Untersaat intensiv bewirtschaftete Busch-, Halbstamm- und Spalierobstkulturen, Beerenobstanbau und Tafeltrauben sowie Keltertrauben;;;;25
+03.223;;;Bio-/Öko-Obstplantagen, Beerenobst- und Tafeltraubenanbau;;;;27
+03.234;;;Weinbau in Steillagen (> 30% Steigung, nur Keltertrauben);;;;29
+03.235;;;Zertifizierter Weinbau nach besonderen Maßgaben in Steillagen (>30% Steigung, nur Keltertrauben);;;;34
+03.236;;;Öko-Weinbau in Steillagen (>30% Steigung, nur Keltertrauben);;;;36
+03.237;(B);;Aufgelassene Weinbergsflächen und Sonderkulturflächen vor Verbuschung Nutzungsaufgabe länger als 10 Jahre nach Wurzelrodung o. Tätigwerden der zuständigen Behörden;;;;36
+03.238;B;;Aufgelassene Weinbergsflächen und Sonderkulturflächen nach Verbuschung Nutzungsaufgabe länger als 10 Jahre nach Wurzelrodung  o. Tätigwerden der zuständigen Behörden;;;;34
+03.241;;;Baumschulen;;;;17
+03.242;;;Öko-Baumschulen;;;;21
+03.243;B;;Baumschulen nach Nutzungsaufgabe;;;;26
+04.000;;;Einzelbäume und Baumgruppen, Feldgehölze;;;;
+04.100;;;Einzelbaum;;;;
+04.110;;°;Einzelbaum einheimisch, standortgerecht, Obstbaum;;;;34
+04.120;(B);°;Einzelbaum nicht heimisch, nicht standortgerecht, Exot als Planung nur im besiedelten Gebiet;;;;23
+04.200;;;Baumgruppe/Baumreihen;;;;
+04.210;;°;Baumgruppe/Baumreihe einheimisch, standortgerecht, Obstbäume ab 3 Bäumen;;;;34
+04.220;;°;Baumgruppe/Baumreihe nicht heimisch, nicht standortgerecht, Exoten ab 3 Bäumen;;;;23
+04.300;;;Alleen;;;;
+04.310;;°;Allee einheimisch, standortgerecht, Obstbäume ab Mindestlänge von 100 m, beidseitig;;ja;2.500;36
+04.320;;°;Allee nicht heimisch, nicht standortgerecht, Exoten ab Mindestlänge von 100m, beidseitig;;;2.500;26
+04.500;B;°;Kopfweiden, Kopfpappeln;;;;44
+04.600;B;;Feldgehölz (Baumhecke), großflächig Deckungsgrad der Bäume >50% (im Unterschied zu Hecken/Gebüschen);;;;50
+05.000;;;Gewässer, Ufer, Sümpfe;;;;
+05.100;;;Quellgebiete;;;;
+05.111;B;;Kalktuffquellen einschließlich Quellgerinne;7220*;ja;;73
+05.112;B;;Tümpelquellen mit Strandlings- oder Zwergbinsenvegetation;3130;ja;;73
+05.113;B;;Tümpelquellen mit Armleuchteralgenvegetation;3140;ja;;73
+05.114;B;;Tümpelquellen mit Schwimmpflanzenvegetation;3150;ja;;73
+05.115;B;;Sonstige Tümpelquellen;;ja;;73
+05.116;B;;Sturzquellen (Rheokrenen);;ja;;73
+05.117;B;;Sickerquellen und Quellfluren (Helokrenen);;ja;;73
+05.118;;;Gefasste Quellen, naturnah anthropogen beeinflusst, mit freiem Wasserabfluss. LRT-Zugehörigkeit ist ggf. anzugeben.;7220* 3130 3140 3150;;;39
+05.120;;;In Bauwerken gefasste Quellen vollständig gefasst, z.B. zur Trinkwassergewinnung;;;4.120;3
+05.200;;;Fließgewässer;;;;
+05.210;;;Bäche (auch nach Renaturierung) (Oberflächengewässer-Typen nach Anhang 1-3 WRRL Bewirtschaftungsplan Hessen 2015-2021, Fließgewässertypen 5-7);;;;
+05.211;;;Bäche mit flutender Wasservegetation, Gewässerstrukturgüteklasse 2 oder besser;3260;ja;;73
+05.212;;;Bäche ohne flutende Wasservegetation, Gewässerstrukturgüteklasse 2 oder besser;;ja;;69
+05.213;;;Bäche mit flutender Wasservegetation, Gewässerstrukturgüteklasse 3 oder schlechter;3260;ja;;50
+05.214;;;Bäche ohne flutende Wasservegetation, Gewässerstrukturgüteklasse 3 oder schlechter;;;;47
+05.215;;;Begradigte und ausgebaute Bäche, Gewässerstrukturgüte 5 oder schlechter;;;;19
+05.220;;;Flüsse (auch nach Renaturierung) (Oberflächengewässer-Typen nach Anhang 1-3 WRRL Bewirtschaftungsplan Hessen 2015-2021, Fließgewässertypen 9-10);;;;
+05.221;;;Naturnahe Flussabschnitte mit Schwammbänken, Gewässerstrukturgüteklasse 2 oder besser;3270;ja;;73
+05.222;;;Naturnahe Flussabschnitte mit flutender Wasservegetation, Gewässerstrukturgüteklasse 2 oder besser;3260;ja;;73
+05.223;;;Sonstige naturnahe Flussabschnitte, Gewässerstrukturgüteklasse 2 oder besser;;ja;;69
+05.224;;;Flussabschnitte mit Schlammbänken, Gewässerstrukturgüteklasse 3 oder schlechter;3270;;;47
+05.225;;;Flussabschnitte mit flutender Wasservegetation, Gewässerstrukturgüteklasse 3 oder schlechter;3260;;;47
+05.226;;;Sonstige Flussabschnitte, Gewässerstrukturgüteklasse 3 oder schlechter;;;;44
+05.227;;;Kanäle (schiffbar) und naturfern ausgebaute Flussabschnitte, Gewässerstrukturgüteklasse 5 oder schlechter;;;;19
+05.230;;;Altarme und Altwasser;;;;
+05.231;B;;oligo- bis mesotrophe Altarme oder Altwasser mit Strandlings- oder Zwergbinsenvegetation;3130;ja;;73
+05.232;B;;oligo- bis mesotrophe Altarm oder Altwasser mit Armleuchteralgenvegetation;3140;ja;;73
+05.233;B;;eutrophe Altarme oder Altwasser mit Schwimmpflanzenvegetation;3150;ja;;73
+05.234;B;;durchströmte Altarme mit flutender Wasservegetation;3260;ja;;73
+05.235;B;;durchströmte Altarme mit Schlammbänken;3270;ja;;73
+05.236;(B);;Sonstige Altarme oder Altwasser  inkl. Neuanlage i.R. von Renaturierung;;ja;;53
+05.240;;;Gräben;;;;
+05.241;B;;Arten-/strukturreiche Gräben  artenreiche Grabenvegetation, mit Strukturelementen wie Grabentaschen und extensiver Grabenunterhaltung;;;;39
+05.242;;;Neuanlage arten-/strukturreiche Gräben  Mindestbreite 5m;;;;23
+05.243;;;Arten-/ strukturarme Gräben;;;;29
+05.244;;;Neuanlage strukturarme Gräben (inkl. Wegseitengräben in Standardbauweise, Trapezprofil, ohne Sohl- und Uferbefestigung);;;;19
+05.245;;;Naturfern ausgebaute Gräben mit Sohl- und Uferbefestigung;;;;7
+05.300;;;Stillgewässer;;;;
+05.310;;;Naturnahe Seen, Flachseen und Weiher  >5 m tief, > 0,1 ha;;;;
+05.311;B;;Oligo- bis mesotrophe (Flach-)Seen oder Weiher mit Strandlings- oder Zwergbinsenvegetation;3130;tw.;;66
+05.312;B;;Oligo- bis mesotrophe (Flach-)Seen oder Weiher mit Armleuchteralgenvegetation;3140;;;66
+05.313;B;;Eutrophe (Flach-)Seen oder Weiher;3150;tw.;;49
+05.314;B;;Dystrophe (Flach-)Seen oder Weiher;3160;ja;;66
+05.315;B;;Sonstige (Flach-)Seen oder Weiher;;;;35
+05.316;;;Neuanlage von (Flach-)Seen oder Weiher;;;;29
+05.330;;;Natürliche oder naturnahe Kleingewässer < 1 ha;;;;
+05.331;B;;Oligo- bis mesotrophe ausdauernde Kleingewässer mit Strandlings- oder Zwergbinsenvegetation;3130;ja;;56
+05.332;B;;Oligo- bis mesotrophe ausdauernde Kleingewässer mit Armleuchteralgenvegetation;3140;ja;;56
+05.333;B;;Ausdauernde Kleingewässer, eutroph;3150;ja;;49
+05.334;B;;Sonstige ausdauernde Kleingewässer;;ja;;50
+05.335;(B);;Oligo- bis mesotrophe temporäre / periodische Kleingewässer mit Strandlings- oder Zwergbinsenvegetation;3130;ja;;47
+05.336;B;;Moorgewässer, dystrophe Kleingewässer;3160;ja;;66
+05.337;(B);;Oligo- bis mesotrophe temporäre / periodische Kleingewässer mit Armleuchteralgenvegetation;3140;ja;;47
+05.340;(B);;Temporäre/periodische Kleingewässer, eutroph;3150;ja;;47
+05.341;(B);;Temporäre/periodische Kleingewässer, dystroph;3160;ja;;47
+05.342;(B);;sonstige temporäre/periodische Kleingewässer;;ja;;47
+05.343;;;Neuanlage von sonstigen Kleingewässern z.B. im besiedelten Gebiet, in Parks;;;;29
+05.344;;;Neuanlage naturnaher Stillgewässer in naturnaher Umgebung  z.B. in Auen, im räumlichen Verbund zu bestehenden Gewässern, im Wald;;;;36
+05.350;;;Naturferne Stillgewässer;;;;
+05.351;;;Stauseen;;tw.;4.410;29
+05.352;;;Kleinspeicher, Teiche, Grubengewässer (Kies- und Tongruben, Steinbruch, nicht renaturiert, in Betrieb) z.B. Fischteiche, Löschwasserteich, Teiche zur Nassauskiesung, dauernd wasserführend. Sofern naturnah oder für Artenschutz relevant zu 05.330;;tw.;4,420       4,430;25
+05.353;B;;Torfstiche;;;;43
+05.354;;;Periodische/ temporäre Becken soweit nicht versiegelt, z.B. Regenrückhaltebecken o.ä.;;;;21
+05.400;;;Röhrichte, Riede, Hochstauden (i.d.R. Außenbereich);;;;
+05.410;(B);;Schilf- und Bachröhrichte Umfasst Primär- und Sekundärstandorte;teilw. 3130, 3140, 3150;ja;5.110;53
+05.440;B;;Großseggenriede/-röhricht;teilw. 3130, 3140, 3150;ja;5.140;56
+05.450;B;;Kleinseggensümpfe saurer Standorte;;ja;;75
+05.451;B;;Kleinseggensümpfe basenreicher Standorte;7230;ja;;75
+05.460;B;;Feucht- und Nassstaudenfluren an Fließgewässern <30% Nitrophyten und Neophyten;6430;tw.;;44
+05.461;;;Sonstige Staudenfluren an Fließgewässern, inkl. Neuanlage sofern Bedingungen für 05.460 nicht erfüllt;;;;39
+06.000;;;Grünland;;;;
+06.100;;;Grünland (wechsel-)feuchter bis nasser Standorte;;;;
+06.111;(B);;Pfeifengraswiesen;6410;ja;;71
+06.112;(B);;Brenndoldenwiesen;6440;ja;;68
+06.113;(B);;Feucht- und Nasswiesen (Sumpfdotterblumenwiesen);;ja;;59
+06.114;(B);;Extensiv genutzte Feuchtweide;;ja;;55
+06.115;(B);;Flutrasen;;ja;;59
+06.116;B;;Intensiv genutzte Feuchtwiesen und -weiden an Kennarten verarmtes Feuchtgrünland;;;;29
+06.117;B;;Feucht- und Nasswiesenbrachen;;ja;;42
+06.200;;;Weiden frischer Standorte;;;;
+06.210;;;Extensiv genutzte Weiden mit deutlichem Vorkommen von Magerkeitszeigern;;;;39
+06.220;;;Intensiv genutzte Weiden;;;;21
+06.300;;;Frischwiesen;;;;
+06.310;(B);;Extensiv genutzte Flachland-Mähwiesen Meist 2-malige Nutzung, kein oder geringer Düngungseinfluss, artenreich;6510;;;55
+06.320;(B);;Extensiv genutzte Berg-Mähwiesen Meist 1- oder 2-malige Nutzung, kein oder geringer Düngungseinfluss, artenreich;6520;;;60
+06.330;(B);;Sonstige extensiv genutzte Mähwiesen;;;;55
+06.340;(B);;Frischwiesen mäßiger Nutzungsintensität meist 2-3 malige Nutzung mit deutlichem Düngungseinfluss, mäßig artenreich;;;;35
+06.350;;;Intensiv genutzte Wirtschaftswiesen und Mähwiesen inkl. Neuanlagen Silagewiesen und Mähweiden mit meist mind. 4-maliger Nutzungsfrequenz und starker Düngung, artenarm;;;;21
+06.360;;;Einsaat aus Futterpflanzen  mehrjährige nutzbare Einsaaten landwirtschaftlicher Futterpflanzen, z.B. aus Weidelgras, Klee-Gras-Mischungen etc.;;;;16
+06.370;;;Naturnahe Grünlandanlagen Einsaat aus gebietseigener Herkunft, i.d.R. kräuterreiche Mischungen, Blühstreifen, Anlage durch Mahdgutübertrag, Heudrusch, Selbstberasung o.ä.;;;;25
+06.380;B;;Wiesenbrachen und ruderale Wiesen mehrere Schnitte müssen unterblieben sein;;;;39
+06.400;;;Magerrasen;;;;
+06.410;(B);;Wacholderheide;5130;ja;;69
+06.420;(B);;Magerrasen basenreicher Standorte orchideenreiche Ausprägungen sind gesondert abzugrenzen und zu kennzeichnen;6210 (*);ja;;69
+06.430;(B);;Magerrasen saurer Standorte Auf sauren Standorten über Festgestein, soweit nicht den Borstgrasrasen zuzuordnen;;ja;;69
+06.440;(B);;Borstgrasrasen;6230*;ja;;69
+06.450;(B);;Bodensaure Sandtrockenrasen auf Binnendünen und Flugsand;2330;ja;;69
+06.460;(B);;Basenreiche, subkontinentale Sandtrockenrasen;6120*;ja;;69
+06.470;(B);;Subkontinentale Steppenrasen;6240;ja;;69
+06.480;(B);;Sonstige Magerrasen;;ja;;69
+06.900;;;Sonstiges Grünland;;;;
+06.940;B;;Salzwiesen, nicht anthropogen;1340*;ja;;69
+06.950;E;;Extensiv genutzte halboffene Weidelandschaft Mindestgröße: 10 ha, Bewaldeter oder duch Gewässer geprägter Flächenanteil jeweils max. 30%, Vorraussetzung: dauerhaftes Pflegekonzept und Nutzungssicherheit min. 30 Jahre, 0,6 - 1 GV/ha; ;;;41
+06.960;E;;Wanderweidefläche Nutzung durch Schafe und/oder Ziegen in Form von Wanderweidehaltung nach Entbuschung inklusive Triffflächen, Vorraussetzung: Pflegekonzept und Nutzungssicherheit min. 30 Jahre, 0,6-1 GV/ha;;;;53
+07.000;;;Zwergstrauchheiden;;;;
+07.100;(B);;Sandheiden auf Binnendünen und Flugsand;2310;ja; ;69
+07.200;(B);;Sonstige Heiden außerhalb von Flugsandbereichen;4030;ja; ;59
+08.000;;;Moore;;;;
+08.100;B;;Hochmoore;7120;ja;8.100;80
+08.300;B;;Übergangs- und Schwingrasenmoore;7140;ja;8.200;80
+08.400;B;;Niedermoore, sonstige Moore Moorflächen, die keinem der FFH-LRT 7120 oder 7140 und keinem der Biotoptypen der Gruppen 05.400 und 06.100 zuzuordnen sind;7230;ja;;80
+09.000;;;Ruderalfluren und krautige Säume;;;;
+09.111;;;Waldbegleitende Innensäume Mindestbreite 0,5m , Säume entlang der Wegnutzungstypen 10.360, 10.460, 10.650 und 10.660 werden nicht gesondert erfasst, da diese mit ca. 0,5m Breite über das Bankett bereits mit dem Weg erfasst sind;;;;39
+09.120;;;Artenreiche Saumvegetation feuchter Standorte Mindestbreite 0,5m , Säume entlang der Wegnutzungstypen 10.360, 10.460, 10.650 und 10.660 werden nicht gesondert erfasst, da diese mit ca. 0,5m Breite über das Bankett bereits mit dem Weg erfasst sind;;;;53
+09.121;;;Artenreiche Saumvegetation frischer Standorte Mindestbreite 0,5m , Säume entlang der Wegnutzungstypen 10.360, 10.460, 10.650 und 10.660 werden nicht gesondert erfasst, da diese mit ca. 0,5m Breite über das Bankett bereits mit dem Weg erfasst sind;;;;50
+09.122;;;Artenreiche Saumvegetation trockener Standorte Mindestbreite 0,5m , Säume entlang der Wegnutzungstypen 10.360, 10.460, 10.650 und 10.660 werden nicht gesondert erfasst, da diese mit ca. 0,5m Breite über das Bankett bereits mit dem Weg erfasst sind;;;;53
+09.123;B;;Artenarme oder nitrophytische Ruderalvegetation;;;;25
+09.124;B;;Arten- oder blütenreiche Ruderalvegetation;;;;41
+09.150;B;;Artenarme Feld-, Weg- und Wiesensäume feuchter Standorte, linear, keine Gehölze;;;;31
+09.151;;;Artenarme Feld-, Weg- und Wiesensäume frischer Standorte, linear, keine Gehölze;;;;29
+09.152;;;Artenarme Feld-, Weg- und Wiesensäume trockener Standorte, linear, keine Gehölze;;;;31
+09.153;;;Anlage von Feld-, Weg- und Wiesensäumen, linear Gräser und Kräuter, keine Gehölze;;;;25
+09.154;(B);;Wiederherstellung von Stufenrainen oder Wiesenrainen, linear Gräser und Kräuter, keine Büsche, breiter als ein Meter;;;;36
+09.160;;;Straßenränder mit Entwässerungsmulde, Mittelstreifen, intensiv gepflegt;;;;13
+10.000;;;Vegetationsarme und kahle Flächen;;;;
+10.100;;;Felsfluren;;;;
+10.111;B;;Natürliche Felsen mit Felsspalten- und/oder Pioniervegetation;6110* 8210, 8220, 8230;ja;;69
+10.112;B;;Natürliche Felsen ohne Felsspalten- und/oder Pioniervegetation;;ja;;69
+10.113;B;;Anthropogene Felsaufschlüsse mit Felsspalten- und/oder Pioniervegetation;6110* 8210, 8220, 8230;;;47
+10.114;B;;Anthropogene Felsaufschlüsse mit Felsspalten;;;;47
+10.120;B;;Block- und Schutthalde (natürlich);8150, 8160;ja;;69
+10.150;(B);;Alte Trockenmauern, Steinriegel, etc. in freier Landschaft ;;;;53
+10.151;;;Neu angelegte Trockenmauern in kulturlandschaftstyp. naturnaher Umgebungim Verbund weiterer Saumstrukturen;;;;36
+10.152;;;sonstige neue angelegte Trockenmauern;;;;16
+10.200;;;Gesteinsabbaustätten;;;;
+10.210;;;Steinbruch in Betrieb, künstlicher/neuer Gesteinsaufschluss mit mind. 30% ungenutzten Bereichen;;;;26
+10.211;;;Steinbruch in Betrieb, künstlicher/neuer Gesteinsaufschluss weniger als 30% ungenutzten Bereichen;;;;15
+10.213;;;Sand- oder Kiesentnahmestellen in Betrieb mit mind. 30% ungenutzten Bereichen;;;;26
+10.214;;;Sand- oder Kiesentnahmestellen in Betrieb weniger als 30% ungenutzte Bereiche;;;;17
+10.216;;;Lehm-/Tonabgrabung (trocken) in Betrieb mit mind. 30% ungenutzten Bereichen;;;;26
+10.217;;;"Lehm-/Tonabgrabung (trocken) in Betrieb weniger als 30% ungenutzten Bereichen
+";;;;17
+10.230;;;Rohböden;;;;23
+10.310;;;Lehm-/Lößwände vegetationsarm (trocken);;ja;;49
+10.411;B;;Anthropogene Schutt- und Geröllhalden, naturnah;8150, 8160;;;47
+10.430;;;Schotterhalde, Abraumhalde, Abbruchmaterial von Gebäuden, naturfern und/oder vegetationsfrei;;;14.800;14
+10.500;;;Versiegelte und teilversiegelte Flächen (inkl. Wege);;;;
+10.510;;;Sehr stark oder völlig versiegelte Flächen (Ortbeton, Asphalt), Müll-Deponie in Betrieb oder nicht abgedeckt, unbegrünte Keller, Fundamente etc.;;;14.000;3
+10.520;;;Nahezu versiegelte Flächen, Pflaster;;;14.000;3
+10.530;;;Schotter-, Kies- u. Sandflächen, -wege, -plätze oder andere wasserdurchlässige Flächenbefestigung sowie versiegelte Flächen, deren Wasserabfluss versickert wird inkl. Gleisanlagen im Schotterbett;;;14.000;6
+10.540;;;Befestigte oder begrünte Flächen Rasenpflaster, Rasengittersteine o.ä.;;;14.000;7
+10.610;(B);;Bewachsene, unbefestigte Feldwege;;;14.000;25
+10.620;(B);;Bewachsene, unbefestigte Waldwege;;;;25
+10.630;;;Wege mit hydraulisch gebundener Tragdeckschicht HGTD-Wege, auch Neuanlage;;;;5
+10.640;;;Wege mit Schotterbankett (Asphalt-, Beton-, Pflasterwege), Fahrbahnbreite kleiner/gleich 5m, beidseitig größer gleich 0,5 m Bankett ;;;;4
+10.650;;;Spurwege mit Schotterbankett und Mittelstreifen (Asphalt-, Beton-, Pflasterspurwege) Regulär Fahrspurbreite 2*1m min. 1m Bankett und Mittelstreifen;;;;6
+10.660;;;Rasengitterspurweg Regulär Fahrspurbreite 2*1m min. 1m Bankett und begrünter Mittelstreifen;;;;8
+10.670;(B);;Bewachsene Schotterwege;;;;17
+10.690;;;Neuanlage Schotterrasenwege Steinerde mit Einsaat;;;;9
+10.691;;;Rekultivierte Deponie mit Gras/ Kräutersaat, Vegetationsschicht auf abgedichtetem Deponiekörper ;;;;25
+10.700;;;Überbaute Flächen;;;;
+10.710;;;Dachfläche nicht begrünt;;;14.000;3
+10.715;;;Dachfläche nicht begrünt, mit zulässiger Regenwasserversickerung;;;14.000;6
+10.720;;;"Dachfläche extensiv begrünt; begrünte Fundamente ohne Pflege, Sukzession";;;14.000;19
+10.730;;;Dachfläche intensiv begrünt mit dauerhafter Pflege, Ziergartencharakter ;;;;13
+10.740;;;Fassadenbegrünung, Pergolen ;;;14.000;
+10.741;B;°;Mauern und Hauswände mit Fassadenbegrünung, begrünte Pergolen;;;14.000;19
+10.743;;°;Neuanlage von Fassaden- oder Pergolabegrünung;;;;13
+11.000;;;Äcker und Gärten;;;;
+11.100;;;Äcker;;;;
+11.191;;;Acker, intensiv genutzt;;;11.140;16
+11.192;(B);;Acker, extensiv genutzt mit artenreicher Wildkrautflora Als Kompensationsmaßnahme nur durch Entwicklung auf standörtlich geeigneten Flächen mit nachweisbarem Potential für artenreiche Wildkrautflora;;;11,110        11,120       11,130;39
+11.193;B;;Ackerbrachen mehr als ein Jahr nicht bewirtschaftet ;;;;29
+11.194;;;Acker mit Artenschutzmaßnahmen  Feldvogelfenster, Hamstermutterzellen, Blühstreifen, temporäre Brachstreifen o.ä.;;;;27
+11.195;;;Acker bei Bio-/ Öko-Landbau;;;;21
+11.200;;;Gärtnerisch gepflegte Anlagen und Hausgärten, Kleingärten und Grabeland;;;;
+11.210;;;Nutzgarten und Ziergarten;;;;
+11.211;;;Grabeland, Gärten in der Landschaft, kleinere Grundstücke, meist nicht gewerbsmäßig genutzt;;;12.100;19
+11.212;;;Gärten/ Kleingartenanlage mit überwiegendem Nutzgartenanteil;;;12.100;20
+11.221;;;Gärtnerisch gepflegte Anlagen im besiedelten Bereich, arten- und strukturarme Hausgärten kleine öffentliche Grünanlagen, innerstädtisches Straßenbegleitgrün etc., strukturarme Grünanlagen, Baumbestand nahezu fehlend;;;;14
+11.222;B;;Arten- und strukturreiche Hausgärten auch im Außenbereich;;;;25
+11.223;;;Neuanlage strukturreicher Hausgärten;;;;20
+11.224;;;Intensivrasen z.B. in Sportanlagen;;;;10
+11.225;(B);;Extensivrasen, Wiesen im besiedelten Bereich, z.B. Rasenflächen alter Stadtparks;;;;23
+11.230;;;Parkanlagen, Friedhöfe, Waldsiedlungen;;;;
+11.231;B;;Park- und Waldfriedhöfe, Waldsiedlungen, Parks, Villensiedlungen mit Großbaumbestand nicht versiegelte Flächen;;;;38
+11.232;;;Friedhofsneuanlagen, neu angelegte Grabfelder ohne nennenswerten Baumbestand;;;;16
