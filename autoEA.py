@@ -10,14 +10,14 @@ class autoEA:
         self.tempCols = tempCols
         self.lastingName = lastingName
         self.tempName = tempName
-        self.LUTpath = "C:/Users/T/Desktop/autoEA/LUT_shk.csv"
+        self.LUTpath = "C:\\Users\\T\\Documents\\GitHub\\auto_EA_Bilanz\\LUT_shk.csv"
         
         self.clip()
         self.addArea(self.clipLayer)
-        self.groupKV_typ(self.clipLayer, self.lastingCols, self.lastingName, 'Ausgleich dauerhaft')
-        self.groupKV_typ(self.clipLayer, self.tempCols, self.tempName, 'Eingriff temporär')
-        self.groupKV_typ(self.clipLayer, self.lastingCols, self.tempName, 'Eingriff dauerhaft')
-        self.groupKV_typ(self.clipLayer, self.tempCols, self.lastingName, 'Ausgleich temporär')
+        self.groupKV_typ(self.clipLayer, self.lastingCols, self.lastingName, 'Ausgleich_dauerhaft')
+        self.groupKV_typ(self.clipLayer, self.tempCols, self.tempName, 'Eingriff_temporär')
+        self.groupKV_typ(self.clipLayer, self.lastingCols, self.tempName, 'Eingriff_dauerhaft')
+        self.groupKV_typ(self.clipLayer, self.tempCols, self.lastingName, 'Ausgleich_temporär')
         
     def clip(self):
         
@@ -83,12 +83,11 @@ class autoEA:
         dc['Biotopwert'] = dc['WP'] * dc['totalArea']
         dc['WPdiff'] = dc['Biotopwert'] - 0
         
-        print(db['Standard-Nutzungs-/Biotoptyp'])
         print(spalte)
         print(spalten)
         print(dc)
         print('\n\n\n\n')
-        dc.to_csv("C:/Users/T/Desktop/autoEA/output/" + name + ".csv", encoding="utf-8", index = False, sep = ";", decimal= ",")
+        dc.to_csv("C:/Users/T/Documents/GitHub/auto_EA_Bilanz/output/" + name + ".csv", encoding="utf-8", index = False, sep = ";", decimal= ",")
         
 
 tempName = 'KV_Typ'
