@@ -12,14 +12,14 @@ class autoEA:
         self.tempName = tempName
         self.LUTpath = "C:\\Users\\T\\Documents\\GitHub\\auto_EA_Bilanz\\LUT_shk.csv"
         
-        self.clip()
+        self.intersect()
         self.addArea(self.clipLayer)
         self.groupKV_typ(self.clipLayer, self.lastingVals, self.lastingName, 'Ausgleich_dauerhaft')
         self.groupKV_typ(self.clipLayer, self.tempVals, self.tempName, 'Eingriff_temporär')
         self.groupKV_typ(self.clipLayer, self.lastingVals, self.tempName, 'Eingriff_dauerhaft')
         self.groupKV_typ(self.clipLayer, self.tempVals, self.lastingName, 'Ausgleich_temporär')
         
-    def clip(self):
+    def intersect(self):
         
         result = processing.runAndLoadResults('native:intersection', 
                             { 'INPUT' : self.biotop.source(),
