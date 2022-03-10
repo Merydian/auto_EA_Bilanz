@@ -11,6 +11,7 @@ class autoEA:
         self.lastingName = lastingName
         self.tempName = tempName
         self.LUTpath = "C:\\Users\\T\\Documents\\GitHub\\auto_EA_Bilanz\\LUT_shk.csv"
+        self.outPath = "C:/Users/T/Documents/GitHub/auto_EA_Bilanz/output/"
         
         self.intersect()
         self.addArea(self.clipLayer)
@@ -21,7 +22,7 @@ class autoEA:
         
     def intersect(self):
         
-        result = processing.runAndLoadResults('native:intersection', 
+        result = processing.run('native:intersection', 
                             { 'INPUT' : self.biotop.source(),
                             'INPUT_FIELDS' : [],
                             'OUTPUT' : 'TEMPORARY_OUTPUT',
@@ -30,7 +31,9 @@ class autoEA:
                             'OVERLAY_FIELDS_PREFIX' : '' })
 
         
-        self.clipLayer = QgsProject.instance().mapLayersByName('Intersection')[0]
+        #self.clipLayer = QgsProject.instance().mapLayersByName('Intersection')[0]
+        self.clipLayer = result['OUTPUT']
+
         
     def addArea(self, layer):
         
@@ -63,9 +66,9 @@ class autoEA:
         datagen = ([f[col] for col in cols] for f in lyr.getFeatures())
         df = pd.DataFrame.from_records(data=datagen, columns=cols)
 
-        df = df.loc[df['MASSN_TYP'].isin(spalten)]
+        d = df.loc[df['MASSN_TYP'].isin(spalten)]
 
-        df = pd.pivot_table(df, values='Area', 
+        df = pd.pivot_table(d, values='Area', 
                                     index=[spalte], 
                                     columns=['MASSN_TYP'], 
                                     aggfunc=np.sum,
@@ -75,19 +78,34 @@ class autoEA:
         da['totalArea'] = df.sum(axis=1)
     
         db = pd.read_csv(self.LUTpath, dtype={'Typ': str, 'WP': float}, sep=';', encoding='utf8')
-
+        
+        # check if all Vals are in LUT
+        for i in d[spalte]:
+            if i not in db['Typ'].tolist():
+                x = i + 'Not contained in LUT'
+                print('WARNING: ' + i + ' not contained in LUT\n')
+        
+        
         dc = da.merge(db, left_on=spalte, right_on='Typ', how='left')
         
         dc = dc[['Typ', 'Standard-Nutzungs-/Biotoptyp', '§30  ', 'Übersch.', 'WP', 'totalArea']]
         
         dc['Biotopwert'] = dc['WP'] * dc['totalArea']
-        dc['WPdiff'] = dc['Biotopwert'] - 0
         
-        print(spalte)
-        print(spalten)
-        print(dc)
-        print('\n\n\n\n')
-        dc.to_csv("C:/Users/T/Documents/GitHub/auto_EA_Bilanz/output/" + name + ".csv", encoding="utf-8", index = False, sep = ";", decimal= ",")
+        if 'Eingriff' in name:
+            dc['WPdiff'] = dc['Biotopwert'] - 0
+            
+        elif 'Ausgleich' in name:
+            dc['WPdiff'] = 0 - dc['Biotopwert']
+        
+        print(name)
+        #print('\nSpaltenname: ' + spalte)
+        #print('\nValues: ')
+        #print(spalten)
+        #print(dc[['Typ', 'WPdiff', 'totalArea']])
+        #print('\nWP gesamt: ' + str(dc['WPdiff'].sum()))
+        #print('\n\n\n\n')
+        dc.to_csv(self.outPath + name + ".csv", encoding="utf-8", index = False, sep = ";", decimal= ",")
         
 
 tempName = 'KV_Typ'
