@@ -1,5 +1,7 @@
 import pandas as pd
 import os
+import matplotlib.pyplot as plt
+from pandas.plotting import table 
 
 class EAsummary:
     def __init__(self, dir):
@@ -26,8 +28,19 @@ class EAsummary:
         df3 = self.data['Eingriff_dauerhaft.csv']
         df4 = self.data['Ausgleich_dauerhaft.csv']
         dauerhaftGes =  df3['WPdiff'].sum() + df4['WPdiff'].sum()
-        
         print(dauerhaftGes)
+        
+        html3 = df3.to_html()
+        html4 = df4.to_html()
+        
+        m = '<table border="1" class="dataframe"> <thead> <tr style="text-align: right;"> <th></th> <th></th> <th></th> <th></th> <th>.</th> <th></th> <th></th> <th></th> <th>' + str(dauerhaftGes) + '</th> </tr> </thead> </table>'
+        
+        html = html3 + html4 + m
+        
+        file = open("sample.html","w")
+        file.write(html)
+        file.close()
+        
         
 dir = "C:/Users/T/Documents/GitHub/auto_EA_Bilanz/output/"
 EAsummary(dir)
