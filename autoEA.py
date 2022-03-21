@@ -2,26 +2,26 @@ import pandas as pd
 import numpy as np
 
 class autoEA:
-    def __init__(self, biotop, planung, tempVals, lastingVals, lastingName, tempName ):
+    def __init__(self, biotop, planung, tempVals, lastingVals, planungName, biotopName, interferenceName):
         self.planung = QgsProject.instance().mapLayersByName(planung)[0]
         self.biotop = QgsProject.instance().mapLayersByName(biotop)[0]
         self.clipLayer = None
+        self.interferenceName  = interferenceName 
         self.lastingVals = lastingVals
         self.tempVals = tempVals
-        self.lastingName = lastingName
-        self.tempName = tempName
-        self.LUTpath = "C:\\Users\\T\\Documents\\GitHub\\auto_EA_Bilanz\\LUT_shk.csv"
-        self.outPath = "C:/Users/T/Documents/GitHub/auto_EA_Bilanz/output/"
+        self.planungName = planungName
+        self.biotopName = biotopName
+        self.LUTpath = "N:/_py/auto_EA_Bilanz-main/L18_07/L18_07_alte_KV.csv"
+        self.outPath = "N:/_py/auto_EA_Bilanz-main/L18_07/output/"
         
         self.intersect()
         self.addArea(self.clipLayer)
-        self.groupKV_typ(self.clipLayer, self.lastingVals, self.lastingName, 'Ausgleich_dauerhaft')
-        self.groupKV_typ(self.clipLayer, self.tempVals, self.tempName, 'Eingriff_temporär')
-        self.groupKV_typ(self.clipLayer, self.lastingVals, self.tempName, 'Eingriff_dauerhaft')
-        self.groupKV_typ(self.clipLayer, self.tempVals, self.lastingName, 'Ausgleich_temporär')
+        self.groupKV_typ(self.clipLayer, self.lastingVals, self.planungName, 'Ausgleich_dauerhaft')
+        self.groupKV_typ(self.clipLayer, self.tempVals, self.biotopName, 'Eingriff_temporär')
+        self.groupKV_typ(self.clipLayer, self.lastingVals, self.biotopName, 'Eingriff_dauerhaft')
+        self.groupKV_typ(self.clipLayer, self.tempVals, self.planungName, 'Ausgleich_temporär')
         
     def intersect(self):
-        
         result = processing.run('native:intersection', 
                             { 'INPUT' : self.biotop.source(),
                             'INPUT_FIELDS' : [],
@@ -66,11 +66,11 @@ class autoEA:
         datagen = ([f[col] for col in cols] for f in lyr.getFeatures())
         df = pd.DataFrame.from_records(data=datagen, columns=cols)
 
-        d = df.loc[df['MASSN_TYP'].isin(spalten)]
+        d = df.loc[df[self.interferenceName].isin(spalten)]
 
         df = pd.pivot_table(d, values='Area', 
                                     index=[spalte], 
-                                    columns=['MASSN_TYP'], 
+                                    columns=[self.interferenceName], 
                                     aggfunc=np.sum,
                                     fill_value=0)
 
@@ -88,7 +88,7 @@ class autoEA:
         
         dc = da.merge(db, left_on=spalte, right_on='Typ', how='left')
         
-        dc = dc[['Typ', 'Standard-Nutzungs-/Biotoptyp', '§30  ', 'Übersch.', 'WP', 'totalArea']]
+        #dc = dc[['Typ', 'Standard-Nutzungs-/Biotoptyp', '§30  ', 'Übersch.', 'WP', 'totalArea']]
         
         dc['Biotopwert'] = dc['WP'] * dc['totalArea']
         
@@ -105,16 +105,22 @@ class autoEA:
         #print(dc[['Typ', 'WPdiff', 'totalArea']])
         #print('\nWP gesamt: ' + str(dc['WPdiff'].sum()))
         #print('\n\n\n\n')
+        
+        if not os.path.exists(self.outPath):
+            os.mkdir(self.outPath)
+        
         dc.to_csv(self.outPath + name + ".csv", encoding="utf-8", index = False, sep = ";", decimal= ",")
         
+''' Hier Input eingeben '''
+biotopName = 'KV_NR' # Name der KV-Nummer Spalte im Biotop Layer
+planungName = 'KV_Nummer' # Name der KV-Nummer Spalte im Planungs Layer
 
-tempName = 'KV_Typ'
-lastingName = 'MASSN_KV'
+tempVals = ['temporaer'] # Werte der temporären Beeinträchtigung
+lastingVals = ['nicht temporaer'] # Werte der dauerhaften Beeinträchtigung
 
-tempVals = ['B_Gruenflaeche', 'B_Gruenflaeche_Boeschung', 'B_Wald', 'B_Wald_Entsiegelung', 'B_Wald_Ersatzaufforstung']
-lastingVals = ['A_Bach', 'A_Befestigung', 'A_Befestigung_Boeschung', 'A_Graben', 'A_Gruenflaeche_Boeschung', 'A_Versiegelung',]
+interferenceName = 'Beeintr_' # Name der Spalte mit den Beeinträchtigungen
 
-Biotop = 'Cleaned'
-Planung = 'L19_07_Planung'
+Biotop = 'Bereinigt' # Name des Biotop Layers
+Planung = 'L18_07_Planung_Polygone_zusammen_cleaned' # name des Planungs Layers
 
-autoEA(biotop=Biotop, planung=Planung, tempVals=tempVals, tempName=tempName, lastingVals=lastingVals, lastingName=lastingName)
+autoEA(biotop=Biotop, planung=Planung, tempVals=tempVals, biotopName=biotopName, lastingVals=lastingVals, planungName=planungName, interferenceName=interferenceName)
