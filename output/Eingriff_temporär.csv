@@ -1,23 +1,23 @@
-Typ;Standard-Nutzungs-/Biotoptyp;§30  ;Übersch.;WP;totalArea;Biotopwert;WPdiff
-01.115;Bodensaurer Buchenwald, forstlich überformt;;;41,0;493,4;20229,399999999998;20229,399999999998
-01.143;"Bachauwald Flächige Bestände; einreihige Ufergehölzbestände fallen unter 02.320";ja;;66,0;767,9;50681,4;50681,4
-02.200;Gebüsche, Hecken, Säume heimischer Arten auf frischen Standorten;;;39,0;1420,52;55400,28;55400,28
-02.300;Sonstige Gebüsche, Hecken, Säume, heimischer Arten auf feuchten bis nassen Standorten außerhalb von Sümpfen und nicht an Fließgewässern;;;44,0;128,85999999999999;5669,839999999999;5669,839999999999
-02.310;Ufer- und Sumpfgebüsche auf feuchten bis nassen Standorten;ja;;44,0;115,32999999999998;5074,5199999999995;5074,5199999999995
-02.320;Ufergehölzsaum, standortgerecht mit Alnus glutinosa und Fraxinus excelsior (Neuanlage siehe 01.149);ja;;50,0;1743,27;87163,5;87163,5
-04.600;Feldgehölz (Baumhecke), großflächig Deckungsgrad der Bäume >50% (im Unterschied zu Hecken/Gebüschen);;;50,0;66,04;3302,0000000000005;3302,0000000000005
-05.214;Bäche ohne flutende Wasservegetation, Gewässerstrukturgüteklasse 3 oder schlechter;;;47,0;128,15;6023,05;6023,05
-05.241;Arten-/strukturreiche Gräben  artenreiche Grabenvegetation, mit Strukturelementen wie Grabentaschen und extensiver Grabenunterhaltung;;;39,0;127,69;4979,91;4979,91
-06.114;Extensiv genutzte Feuchtweide;ja;;55,0;111,77;6147,349999999999;6147,349999999999
-06.116;Intensiv genutzte Feuchtwiesen und -weiden an Kennarten verarmtes Feuchtgrünland;;;29,0;1090,71;31630,59;31630,59
-06.117;Feucht- und Nasswiesenbrachen;ja;;42,0;297,63;12500,46;12500,46
-06.220;Intensiv genutzte Weiden;;;21,0;672,1099999999999;14114,309999999998;14114,309999999998
-06.340;Frischwiesen mäßiger Nutzungsintensität meist 2-3 malige Nutzung mit deutlichem Düngungseinfluss, mäßig artenreich;;;35,0;3839,3599999999997;134377,59999999998;134377,59999999998
-06.350;Intensiv genutzte Wirtschaftswiesen und Mähwiesen inkl. Neuanlagen Silagewiesen und Mähweiden mit meist mind. 4-maliger Nutzungsfrequenz und starker Düngung, artenarm;;;21,0;13130,489999999998;275740,29;275740,29
-09.123;Artenarme oder nitrophytische Ruderalvegetation;;;25,0;130,3;3257,5000000000005;3257,5000000000005
-09.151;Artenarme Feld-, Weg- und Wiesensäume frischer Standorte, linear, keine Gehölze;;;29,0;832,8900000000001;24153,81;24153,81
-10.530;Schotter-, Kies- u. Sandflächen, -wege, -plätze oder andere wasserdurchlässige Flächenbefestigung sowie versiegelte Flächen, deren Wasserabfluss versickert wird inkl. Gleisanlagen im Schotterbett;;;6,0;0,03;0,18;0,18
-10.610;Bewachsene, unbefestigte Feldwege;;;25,0;97,35;2433,75;2433,75
-10.620;Bewachsene, unbefestigte Waldwege;;;25,0;11,56;289,0;289,0
-10.640;Wege mit Schotterbankett (Asphalt-, Beton-, Pflasterwege), Fahrbahnbreite kleiner/gleich 5m, beidseitig größer gleich 0,5 m Bankett ;;;4,0;0,0;0,0;0,0
-11.191;Acker, intensiv genutzt;;;16,0;16954,09;271265,44;271265,44
+totalArea;Typ;Restr.;Übersch.;Standard-Nutzungs-/Biotoptyp;LRT;§30  ;HB-Code;WP;Biotopwert;WPdiff
+493,4;01.115;B;;Bodensaurer Buchenwald, forstlich überformt;9110;;;41,0;20229,399999999998;20229,399999999998
+767,9;01.143;B;;"Bachauwald Flächige Bestände; einreihige Ufergehölzbestände fallen unter 02.320";91E0*;ja;;66,0;50681,4;50681,4
+1420,52;02.200;(B);;Gebüsche, Hecken, Säume heimischer Arten auf frischen Standorten;;;;39,0;55400,28;55400,28
+128,85999999999999;02.300;(B);;Sonstige Gebüsche, Hecken, Säume, heimischer Arten auf feuchten bis nassen Standorten außerhalb von Sümpfen und nicht an Fließgewässern;;;;44,0;5669,839999999999;5669,839999999999
+115,32999999999998;02.310;(B);;Ufer- und Sumpfgebüsche auf feuchten bis nassen Standorten;;ja;;44,0;5074,5199999999995;5074,5199999999995
+1743,27;02.320;(B);;Ufergehölzsaum, standortgerecht mit Alnus glutinosa und Fraxinus excelsior (Neuanlage siehe 01.149);91E0*  ;ja;;50,0;87163,5;87163,5
+66,04;04.600;B;;Feldgehölz (Baumhecke), großflächig Deckungsgrad der Bäume >50% (im Unterschied zu Hecken/Gebüschen);;;;50,0;3302,0000000000005;3302,0000000000005
+128,15;05.214;;;Bäche ohne flutende Wasservegetation, Gewässerstrukturgüteklasse 3 oder schlechter;;;;47,0;6023,05;6023,05
+127,69;05.241;B;;Arten-/strukturreiche Gräben  artenreiche Grabenvegetation, mit Strukturelementen wie Grabentaschen und extensiver Grabenunterhaltung;;;;39,0;4979,91;4979,91
+111,77;06.114;(B);;Extensiv genutzte Feuchtweide;;ja;;55,0;6147,349999999999;6147,349999999999
+1090,71;06.116;B;;Intensiv genutzte Feuchtwiesen und -weiden an Kennarten verarmtes Feuchtgrünland;;;;29,0;31630,59;31630,59
+297,63;06.117;B;;Feucht- und Nasswiesenbrachen;;ja;;42,0;12500,46;12500,46
+672,1099999999999;06.220;;;Intensiv genutzte Weiden;;;;21,0;14114,309999999998;14114,309999999998
+3839,3599999999997;06.340;(B);;Frischwiesen mäßiger Nutzungsintensität meist 2-3 malige Nutzung mit deutlichem Düngungseinfluss, mäßig artenreich;;;;35,0;134377,59999999998;134377,59999999998
+13130,489999999998;06.350;;;Intensiv genutzte Wirtschaftswiesen und Mähwiesen inkl. Neuanlagen Silagewiesen und Mähweiden mit meist mind. 4-maliger Nutzungsfrequenz und starker Düngung, artenarm;;;;21,0;275740,29;275740,29
+130,3;09.123;B;;Artenarme oder nitrophytische Ruderalvegetation;;;;25,0;3257,5000000000005;3257,5000000000005
+832,8900000000001;09.151;;;Artenarme Feld-, Weg- und Wiesensäume frischer Standorte, linear, keine Gehölze;;;;29,0;24153,81;24153,81
+0,03;10.530;;;Schotter-, Kies- u. Sandflächen, -wege, -plätze oder andere wasserdurchlässige Flächenbefestigung sowie versiegelte Flächen, deren Wasserabfluss versickert wird inkl. Gleisanlagen im Schotterbett;;;14.000;6,0;0,18;0,18
+97,35;10.610;(B);;Bewachsene, unbefestigte Feldwege;;;14.000;25,0;2433,75;2433,75
+11,56;10.620;(B);;Bewachsene, unbefestigte Waldwege;;;;25,0;289,0;289,0
+0,0;10.640;;;Wege mit Schotterbankett (Asphalt-, Beton-, Pflasterwege), Fahrbahnbreite kleiner/gleich 5m, beidseitig größer gleich 0,5 m Bankett ;;;;4,0;0,0;0,0
+16954,09;11.191;;;Acker, intensiv genutzt;;;11.140;16,0;271265,44;271265,44

@@ -1,10 +1,10 @@
-Typ;Standard-Nutzungs-/Biotoptyp;§30  ;Übersch.;WP;totalArea;Biotopwert;WPdiff
-01.118;Buchenaufforstungen vor Kronenschluss;;;33,0;294,73;9726,09;-9726,09
-01.149;Neuanlage von Auwald/ Bruchwald/ Ufergehölzen;;;36,0;13706,029999999999;493417,07999999996;-493417,07999999996
-02.400;Neuanpflanzungen von Hecken-/Gebüschen (heimisch, standortgerecht, nur Außenbereich), Neuanlage von Feldgehölzen mit gebietseigenen Gehölzen, midestens dreireihig, mindestens 5m breit;;;27,0;2519,690000000001;68031,63000000002;-68031,63000000002
-02.600;Neue Hecken-/Gebüschpflanzung (straßenbegleitend etc., nicht auf Mittelstreifen);;;20,0;584,2900000000001;11685,800000000001;-11685,800000000001
-05.461;Sonstige Staudenfluren an Fließgewässern, inkl. Neuanlage sofern Bedingungen für 05.460 nicht erfüllt;;;39,0;2052,1800000000003;80035,02000000002;-80035,02000000002
-06.370;Naturnahe Grünlandanlagen Einsaat aus gebietseigener Herkunft, i.d.R. kräuterreiche Mischungen, Blühstreifen, Anlage durch Mahdgutübertrag, Heudrusch, Selbstberasung o.ä.;;;25,0;1280,1;32002,499999999996;-32002,499999999996
-;;;;;254,71999999999997;;
-;;;;;21128,559999999998;;
-09.160;Straßenränder mit Entwässerungsmulde, Mittelstreifen, intensiv gepflegt;;;13,0;339,15;4408,95;-4408,95
+totalArea;Typ;Restr.;Übersch.;Standard-Nutzungs-/Biotoptyp;LRT;§30  ;HB-Code;WP;Biotopwert;WPdiff
+294,73;01.118;;;Buchenaufforstungen vor Kronenschluss;;;;33,0;9726,09;-9726,09
+13706,029999999999;01.149;;;Neuanlage von Auwald/ Bruchwald/ Ufergehölzen;;;;36,0;493417,07999999996;-493417,07999999996
+2519,690000000001;02.400;;;Neuanpflanzungen von Hecken-/Gebüschen (heimisch, standortgerecht, nur Außenbereich), Neuanlage von Feldgehölzen mit gebietseigenen Gehölzen, midestens dreireihig, mindestens 5m breit;;;;27,0;68031,63000000002;-68031,63000000002
+584,2900000000001;02.600;;;Neue Hecken-/Gebüschpflanzung (straßenbegleitend etc., nicht auf Mittelstreifen);;;;20,0;11685,800000000001;-11685,800000000001
+2052,1800000000003;05.461;;;Sonstige Staudenfluren an Fließgewässern, inkl. Neuanlage sofern Bedingungen für 05.460 nicht erfüllt;;;;39,0;80035,02000000002;-80035,02000000002
+1280,1;06.370;;;Naturnahe Grünlandanlagen Einsaat aus gebietseigener Herkunft, i.d.R. kräuterreiche Mischungen, Blühstreifen, Anlage durch Mahdgutübertrag, Heudrusch, Selbstberasung o.ä.;;;;25,0;32002,499999999996;-32002,499999999996
+254,71999999999997;;;;;;;;;;
+21128,559999999998;;;;;;;;;;
+339,15;09.160;;;Straßenränder mit Entwässerungsmulde, Mittelstreifen, intensiv gepflegt;;;;13,0;4408,95;-4408,95
