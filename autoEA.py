@@ -2,17 +2,18 @@ import pandas as pd
 import numpy as np
 
 class autoEA:
-    def __init__(self, biotop, planung, tempVals, lastingVals, planungName, biotopName, interferenceName):
+    def __init__(self, biotop, planung, tempVals, lastingVals, planungName, biotopName, interferenceName, path):
         self.planung = QgsProject.instance().mapLayersByName(planung)[0]
         self.biotop = QgsProject.instance().mapLayersByName(biotop)[0]
         self.clipLayer = None
         self.interferenceName  = interferenceName 
         self.lastingVals = lastingVals
+        self.path = path
         self.tempVals = tempVals
         self.planungName = planungName
         self.biotopName = biotopName
-        self.LUTpath = "N:/_py/auto_EA_Bilanz-main/L18_07/L18_07_alte_KV.csv"
-        self.outPath = "N:/_py/auto_EA_Bilanz-main/L18_07/output/"
+        self.LUTpath = path + "/LUT_shk.csv"
+        self.outPath = path + "/output/"
         
         self.intersect()
         self.addArea(self.clipLayer)
@@ -112,15 +113,17 @@ class autoEA:
         dc.to_csv(self.outPath + name + ".csv", encoding="utf-8", index = False, sep = ";", decimal= ",")
         
 ''' Hier Input eingeben '''
-biotopName = 'KV_NR' # Name der KV-Nummer Spalte im Biotop Layer
-planungName = 'KV_Nummer' # Name der KV-Nummer Spalte im Planungs Layer
+biotopName = 'KV_Typ' # Name der KV-Nummer Spalte im Biotop Layer
+planungName = 'MASSN_KV' # Name der KV-Nummer Spalte im Planungs Layer
 
-tempVals = ['temporaer'] # Werte der temporären Beeinträchtigung
-lastingVals = ['nicht temporaer'] # Werte der dauerhaften Beeinträchtigung
+tempVals = ['B_Gruenflaeche', 'B_Gruenflaeche_Boeschung', 'B_Wald', 'B_Wald_Entsiegelung', 'B_Wald_Ersatzaufforstung'] # Werte der temporären Beeinträchtigung
+lastingVals = ['A_Bach', 'A_Befestigung', 'A_Befestigung_Boeschung', 'A_Graben', 'A_Gruenflaeche_Boeschung', 'A_Versiegelung',] # Werte der dauerhaften Beeinträchtigung
 
-interferenceName = 'Beeintr_' # Name der Spalte mit den Beeinträchtigungen
+interferenceName = 'MASSN_TYP' # Name der Spalte mit den Beeinträchtigungen
 
-Biotop = 'Bereinigt' # Name des Biotop Layers
-Planung = 'L18_07_Planung_Polygone_zusammen_cleaned' # name des Planungs Layers
+Biotop = 'Cleaned' # Name des Biotop Layers
+Planung = 'L19_07_Planung' # name des Planungs Layers
 
-autoEA(biotop=Biotop, planung=Planung, tempVals=tempVals, biotopName=biotopName, lastingVals=lastingVals, planungName=planungName, interferenceName=interferenceName)
+path = 'C:\\Users\\T\\Documents\\GitHub\\auto_EA_Bilanz'
+
+autoEA(biotop=Biotop, planung=Planung, tempVals=tempVals, biotopName=biotopName, lastingVals=lastingVals, planungName=planungName, interferenceName=interferenceName, path=path)
