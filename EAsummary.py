@@ -29,15 +29,19 @@ class EAsummary:
         df4 = self.data['Ausgleich_dauerhaft.csv']
         dauerhaftGes =  df3['WPdiff'].sum() + df4['WPdiff'].sum()
         print(dauerhaftGes)
-        
+
+        html1 = df1.to_html()
+        html2 = df2.to_html()
         html3 = df3.to_html()
         html4 = df4.to_html()
         
-        m = '<table border="1" class="dataframe"> <thead> <tr style="text-align: right;"> <th></th> <th></th> <th></th> <th></th> <th>.</th> <th></th> <th></th> <th></th> <th>' + str(dauerhaftGes) + '</th> </tr> </thead> </table>'
+        n = '<b>Summe: ' + str(round(tempGes)) + '</b>'
+        m = '<b>Summe: ' + str(round(dauerhaftGes)) + '</b>'
+        summary = ''
         
-        html = html3 + html4 + m
+        html = html3 + html4 + m + html1 + html2 + n + summary
         
-        file = open("sample.html","w")
+        file = open("summary.html","w")
         file.write(html)
         file.close()
         

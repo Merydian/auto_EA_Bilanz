@@ -21,6 +21,7 @@ class autoEA:
         self.groupKV_typ(self.clipLayer, self.tempVals, self.biotopName, 'Eingriff_temporär')
         self.groupKV_typ(self.clipLayer, self.lastingVals, self.biotopName, 'Eingriff_dauerhaft')
         self.groupKV_typ(self.clipLayer, self.tempVals, self.planungName, 'Ausgleich_temporär')
+        self.check_vals()
         
     def intersect(self):
         result = processing.run('native:intersection', 
@@ -35,7 +36,15 @@ class autoEA:
         #self.clipLayer = QgsProject.instance().mapLayersByName('Intersection')[0]
         self.clipLayer = result['OUTPUT']
 
+    def check_vals(self):
+        vals = list(set([(f[interferenceName]) for f in self.planung.getFeatures()]))
         
+        for i in vals:
+            if i not in self.tempVals or i not in self.lastingVals:
+                print('WARNING: ' + i + ' not contained in given values\n')
+        
+    
+    
     def addArea(self, layer):
         
         caps = layer.dataProvider().capabilities()
@@ -89,7 +98,7 @@ class autoEA:
         
         dc = da.merge(db, left_on=spalte, right_on='Typ', how='left')
         
-        #dc = dc[['Typ', 'Standard-Nutzungs-/Biotoptyp', '§30  ', 'Übersch.', 'WP', 'totalArea']]
+        dc = dc[['Typ', 'Standard-Nutzungs-/Biotoptyp', '§30  ', 'Übersch.', 'WP', 'totalArea']]
         
         dc['Biotopwert'] = dc['WP'] * dc['totalArea']
         
@@ -99,7 +108,7 @@ class autoEA:
         elif 'Ausgleich' in name:
             dc['WPdiff'] = 0 - dc['Biotopwert']
         
-        print(name)
+        #print(name)
         #print('\nSpaltenname: ' + spalte)
         #print('\nValues: ')
         #print(spalten)
@@ -116,8 +125,8 @@ class autoEA:
 biotopName = 'KV_Typ' # Name der KV-Nummer Spalte im Biotop Layer
 planungName = 'MASSN_KV' # Name der KV-Nummer Spalte im Planungs Layer
 
-tempVals = ['B_Gruenflaeche', 'B_Gruenflaeche_Boeschung', 'B_Wald', 'B_Wald_Entsiegelung', 'B_Wald_Ersatzaufforstung'] # Werte der temporären Beeinträchtigung
-lastingVals = ['A_Bach', 'A_Befestigung', 'A_Befestigung_Boeschung', 'A_Graben', 'A_Gruenflaeche_Boeschung', 'A_Versiegelung',] # Werte der dauerhaften Beeinträchtigung
+tempVals = ['B_Gruenflaeche', 'B_Gruenflaeche_Boeschung', 'B_Wald', 'B_Wald_Entsiegelung', 'B_Wald_Ersatzaufforstung'] # Werte der temporären Beeinträchtigung in der Planung
+lastingVals = ['A_Bach', 'A_Befestigung', 'A_Befestigung_Boeschung', 'A_Graben', 'A_Gruenflaeche_Boeschung', 'A_Versiegelung',] # Werte der dauerhaften Beeinträchtigung in der Planung
 
 interferenceName = 'MASSN_TYP' # Name der Spalte mit den Beeinträchtigungen
 
